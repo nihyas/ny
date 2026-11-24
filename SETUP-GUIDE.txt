@@ -1,0 +1,26 @@
+ROBIN - PORTABLE WINDOWS SETUP
+==============================
+
+Supported system: Windows 10 or 11, x64, with a normal interactive desktop session and DirectX 11 support. This is a Windows desktop application, not a Docker app.
+
+INSTALL AND START (NO ADMIN INSTALLER)
+1. Copy this entire Robin-Share folder to the recipient's PC. If it came as a ZIP, right-click it in File Explorer and choose Extract All. Put the extracted folder somewhere the user can write, such as Desktop or Documents. Do not run it from inside the ZIP and keep all DLLs beside Robin.exe.
+2. Double-click Start-Robin.cmd. The launcher checks the main runtime files before starting Robin. The application requests standard user privileges (asInvoker).
+3. If the launcher says WebView2 Runtime is missing, download the Evergreen Bootstrapper from Microsoft's official page:
+   https://developer.microsoft.com/en-us/microsoft-edge/webview2/
+   Run that installer normally, without choosing Run as administrator. Microsoft supports a per-user WebView2 installation. Internet is required for this bootstrapper. Then run Start-Robin.cmd again.
+4. Log in with the username and password provided to you by the publisher. No external email or Gmail address is required. AI provider keys, when needed, are configured per account by the publisher. Online features need internet access.
+
+WHERE YOUR DATA GOES
+Chat history is saved under Desktop\Robin\chat-history in the Windows account running Robin. Do not send that folder when sharing the application. When the evidence-upload feature runs, it stores ZIP files in the private Robin Supabase Storage bucket for the signed-in account.
+
+IF IT DOES NOT START
+- Confirm Windows is x64 and the complete folder was extracted. Do not separate Robin.exe from its DLL files.
+- If login reports missing database setup, the publisher must run Robin's Supabase setup SQL and create your account.
+- If WebView2 installation or the app is blocked by organization policy, ask that PC's IT administrator. A portable package cannot override policy.
+- Features that interact with another program running as administrator may be limited by Windows security boundaries while Robin runs as a standard user.
+- This release is unsigned. Windows SmartScreen or antivirus policy may warn or block it. The publisher should code-sign a verified release for broad distribution.
+
+DISTRIBUTION AND PROTECTION
+This folder includes the optimized release executable and runtime files; it excludes source code, debug symbols, and the creator's saved settings. No Windows executable can be made impossible to copy, modify, crack, or reverse engineer. Keep shared secrets and license decisions on a server if stronger protection is required, and never embed private API keys in distributed binaries.
+The bundled Microsoft Visual C++ DLLs allow standard-user deployment, but the publisher must refresh them with future security updates. Redistribution is subject to Microsoft's Visual Studio license terms. See THIRD_PARTY_NOTICES.md.

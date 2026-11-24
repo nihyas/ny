@@ -1,0 +1,40 @@
+{
+    "chatHistory": {
+        "enabled": true
+    },
+    "inspect": {
+        "alt": false,
+        "ctrl": false,
+        "shift": false,
+        "vk": 0
+    },
+    "paste": {
+        "alt": true,
+        "ctrl": false,
+        "shift": false,
+        "vk": 56
+    },
+    "screenshot": {
+        "alt": true,
+        "ctrl": false,
+        "shift": false,
+        "vk": 57
+    },
+    "send": {
+        "alt": false,
+        "ctrl": true,
+        "shift": true,
+        "vk": 13
+    },
+    "telegram": {
+        "chatId": "",
+        "enabled": false,
+        "token": ""
+    },
+    "toggle": {
+        "alt": true,
+        "ctrl": false,
+        "shift": false,
+        "vk": 48
+    }
+}
