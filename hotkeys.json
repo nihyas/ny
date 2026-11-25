@@ -1,6 +1,6 @@
 {
     "chatHistory": {
-        "enabled": true
+        "enabled": false
     },
     "inspect": {
         "alt": false,
@@ -9,20 +9,20 @@
         "vk": 0
     },
     "paste": {
-        "alt": false,
+        "alt": true,
         "ctrl": false,
         "shift": false,
-        "vk": 0
+        "vk": 56
     },
     "screenshot": {
         "alt": true,
         "ctrl": false,
         "shift": false,
-        "vk": 220
+        "vk": 57
     },
     "send": {
-        "alt": false,
-        "ctrl": true,
+        "alt": true,
+        "ctrl": false,
         "shift": false,
         "vk": 13
     },
@@ -35,6 +35,6 @@
         "alt": true,
         "ctrl": false,
         "shift": false,
-        "vk": 191
+        "vk": 48
     }
 }
