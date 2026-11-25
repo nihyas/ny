@@ -9,21 +9,21 @@
         "vk": 0
     },
     "paste": {
-        "alt": true,
+        "alt": false,
         "ctrl": false,
         "shift": false,
-        "vk": 56
+        "vk": 0
     },
     "screenshot": {
         "alt": true,
         "ctrl": false,
         "shift": false,
-        "vk": 57
+        "vk": 220
     },
     "send": {
         "alt": false,
         "ctrl": true,
-        "shift": true,
+        "shift": false,
         "vk": 13
     },
     "telegram": {
@@ -35,6 +35,6 @@
         "alt": true,
         "ctrl": false,
         "shift": false,
-        "vk": 48
+        "vk": 191
     }
 }
